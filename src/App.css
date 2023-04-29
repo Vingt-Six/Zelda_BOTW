@@ -1,0 +1,11 @@
+body {
+    background-image: url("https://w.wallhaven.cc/full/od/wallhaven-odk61p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100dvw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
