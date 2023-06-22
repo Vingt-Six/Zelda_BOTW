@@ -28,10 +28,11 @@ function Equipement(props) {
             </div>
         </div>
     ) : (
-        <div className="equipement">
-            {data.map((equipment, index) => (
+        <div className="equipement" style={{ display: 'flex', overflowX: 'scroll', gap: '20px' }}>
+            {data.map((equipement, index) => (
                 <div key={index}>
-                    <img src={equipment.image} alt="" />
+                    <img src={equipement.image} alt="" onClick={() => console.log(equipement.id)} />
+                    <a href={`/equipement/${equipement.id}`}>Go</a>
                 </div>
             ))}
         </div>

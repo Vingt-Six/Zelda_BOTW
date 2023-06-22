@@ -10,7 +10,7 @@ function Monster() {
         async function fetchData() {
             setLoading(true);
             try {
-                const response = await fetch("https://botw-compendium.herokuapp.com/api/v2");
+                const response = await fetch("https://botw-compendium.herokuapp.com/api/v2/category/monsters");
                 const result = await response.json();
                 setData(result.data);
                 setLoading(false);
@@ -22,11 +22,20 @@ function Monster() {
         fetchData();
     }, []);
 
-    return (
-        <div>
-
+    return loading ? (
+        <div className="one">
+            <div className="circle">
+            </div>
         </div>
-    )
+    ) : (
+        <div className="material" style={{ display: 'flex', overflowX: 'scroll', gap: '20px' }}>
+            {data.map((monster, index) => (
+                <div key={index}>
+                    <img src={monster.image} alt="" />
+                </div>
+            ))}
+        </div>
+    );
 };
 
 export default Monster;

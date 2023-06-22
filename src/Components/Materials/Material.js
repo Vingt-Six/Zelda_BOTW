@@ -28,7 +28,7 @@ function Material() {
             </div>
         </div>
     ) : (
-        <div className="material">
+        <div className="material" style={{ display: 'flex', overflowX: 'scroll', gap: '20px' }}>
             {data.map((material, index) => (
                 <div key={index}>
                     <img src={material.image} alt="" />
