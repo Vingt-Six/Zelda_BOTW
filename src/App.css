@@ -1,10 +1,23 @@
 body {
-    background-image: url("https://rare-gallery.com/mocahbig/440793-Zelda-The-Legend-of-Zelda-Breath-of-the-Wild.png");
+    background-image: url('./img/botw.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
     width: 100dvw;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.App {
+    display: flex;
+}
+
+.element {
+    height: 100dvh;
+    width: 80dvw;
+    overflow: scroll;
+}
+
+.theside {
+    
 }

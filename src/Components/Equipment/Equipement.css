@@ -1,22 +1,29 @@
-.one {
-    width: 100dvw;
-    height: 100dvh;
+.allekip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardekip {
+    width: 45%;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    background-color: #3dffc8;
+    margin-top: 4vh;
+    cursor: pointer;
+    height: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.circle {
-    width: 100px;
-    height: 100px;
+.ekipimg {
+    height: 6rem;
+    width: 6rem;
+    overflow: hidden;
     border-radius: 50%;
-    border: 10px solid transparent;
-    border-top-color: #3dffc9;
-    animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-        }
+.ekipimg img {
+    /* object-fit: cover; */
+    height: 100%;
 }

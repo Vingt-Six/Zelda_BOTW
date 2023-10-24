@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Material.css'
+import Loading from '../Loading/Loading';
 
 function Material() {
 
@@ -23,10 +24,9 @@ function Material() {
     }, []);
 
     return loading ? (
-        <div className="one">
-            <div className="circle">
-            </div>
-        </div>
+        <>
+            <Loading />
+        </>
     ) : (
         <div className="material" style={{ display: 'flex', overflowX: 'scroll', gap: '20px' }}>
             {data.map((material, index) => (

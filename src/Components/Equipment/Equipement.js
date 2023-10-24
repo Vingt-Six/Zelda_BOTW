@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Equipement.css'
+import Loading from '../Loading/Loading'
 
 function Equipement(props) {
 
@@ -23,18 +24,20 @@ function Equipement(props) {
     }, []);
 
     return loading ? (
-        <div className="one">
-            <div className="circle">
-            </div>
-        </div>
+        <>
+            <Loading />
+        </>
     ) : (
-        <div className="equipement" style={{ display: 'flex', overflowX: 'scroll', gap: '20px' }}>
-            {data.map((equipement, index) => (
-                <div key={index}>
-                    <img src={equipement.image} alt="" onClick={() => console.log(equipement.id)} />
-                    <a href={`/equipement/${equipement.id}`}>Go</a>
-                </div>
-            ))}
+        <div className="equipement">
+            <div className='allekip'>
+                {data.map((equipement, index) => (
+                    <div key={index} className='cardekip'>
+                        <div className='ekipimg'>
+                            <img src={equipement.image} alt="" onClick={() => console.log(equipement.id)} />
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

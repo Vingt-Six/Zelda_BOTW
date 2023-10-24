@@ -1,0 +1,25 @@
+.side {
+    height: 100dvh;
+    width: 20dvw;
+    background-color: lightgreen;
+}
+
+.logotitle {
+    display: flex;
+    & img {
+        width: 10%;
+    }
+}
+
+.side nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.side>nav div {
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
