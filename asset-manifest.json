@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Zelda_BOTW/static/css/main.84ed9445.css",
+    "main.js": "/Zelda_BOTW/static/js/main.4730f085.js",
+    "static/media/botw.png": "/Zelda_BOTW/static/media/botw.11ae548b78ce32b34e9f.png",
+    "static/media/mipha.png": "/Zelda_BOTW/static/media/mipha.3ecdee4fd251f3e4ef4f.png",
+    "static/media/link.png": "/Zelda_BOTW/static/media/link.6375743f84624b47b179.png",
+    "static/media/Revali.png": "/Zelda_BOTW/static/media/Revali.e62a0cadb3cfc1f1e3d0.png",
+    "static/media/Urbosa.png": "/Zelda_BOTW/static/media/Urbosa.f9211a6bc054884326f1.png",
+    "static/media/Daruk.png": "/Zelda_BOTW/static/media/Daruk.233ec033c17143ac08e4.png",
+    "static/media/zelda.png": "/Zelda_BOTW/static/media/zelda.d3dea6ab31d45d9f27e7.png",
+    "static/media/The Wild Breath of Zelda.otf": "/Zelda_BOTW/static/media/The Wild Breath of Zelda.f2586a76dbe6e9c1c007.otf",
+    "static/media/HyliaSerifBeta-Regular.otf": "/Zelda_BOTW/static/media/HyliaSerifBeta-Regular.587194a6240d0f662864.otf",
+    "index.html": "/Zelda_BOTW/index.html",
+    "main.84ed9445.css.map": "/Zelda_BOTW/static/css/main.84ed9445.css.map",
+    "main.4730f085.js.map": "/Zelda_BOTW/static/js/main.4730f085.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84ed9445.css",
+    "static/js/main.4730f085.js"
+  ]
+}
