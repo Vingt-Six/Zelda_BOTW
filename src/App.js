@@ -10,10 +10,6 @@ import Sidebar from './Components/Sidebar/Sidebar';
 function App() {
   return (
     <div className='App'>
-      <div className='theside'>
-        <Sidebar />
-      </div>
-      <div className='element'>
         <BrowserRouter>
           <Routes>
             <Route path="/" exact element={<Equipement />} />
@@ -23,7 +19,6 @@ function App() {
             <Route path='*' element={<ErrorPage />} />
           </Routes>
         </BrowserRouter>
-      </div>
     </div>
   )
 }
